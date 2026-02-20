@@ -33,7 +33,7 @@ app = Flask(__name__)
 CORS(app)
 
 # --- Prompt template for RAG ---
-custom_prompt_template = """You are a helpful assistant for question answering over a set of documents.
+custom_prompt_template = """You are a helpful assistant for question answering over a set of documents.your name is RAG ONE
 
 First, check the provided context.
 
@@ -253,3 +253,4 @@ if __name__ == "__main__":
         create_vector_db()
 
     app.run(debug=True,host="0.0.0.0",port=8089)
+
